@@ -8,7 +8,8 @@ export const DiscountCard = () => {
           {/* LEFT CONTENT */}
           <div>
             <h2 className="text-[52px] leading-tight font-extrabold text-[#1F2937] mb-10">
-              Get 25% Discount on
+                Get
+              <span className="text-orange-300"> 25% Discount</span> on
               <br />
               your first purchase
             </h2>
@@ -32,7 +33,7 @@ export const DiscountCard = () => {
 
               <input
                 type="email"
-                placeholder="Email Address"
+                placeholder="abc@mail.com"
                 className="w-full px-5 py-4 rounded-md border border-gray-300 bg-white text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
               />
 
