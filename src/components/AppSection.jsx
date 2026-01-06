@@ -4,7 +4,7 @@ import PlayStoreImg from '../assets/googleplayimg.jpg'
 
  export const AppSection = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="bg-orange-50 rounded-2xl px-12 py-16 flex items-center overflow-hidden">
         
         {/* LEFT – PHONE */}
@@ -12,13 +12,13 @@ import PlayStoreImg from '../assets/googleplayimg.jpg'
           <img
             src={PhoneImage}
             alt="Foodmart App"
-            className="h-[520px] object-contain drop-shadow-xl"
+            className="h-160 object-contain drop-shadow-xl"
           />
         </div>
 
         {/* RIGHT – CONTENT */}
         <div className="flex-1 pl-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6 leading-tight">
+          <h2 className="text-5xl font-light text-gray-500 mb-6 leading-tight">
             Shop faster with foodmart App
           </h2>
 

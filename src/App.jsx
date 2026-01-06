@@ -15,12 +15,14 @@ import { AppSection } from './components/AppSection'
 import { PeopleLookingFor } from './components/PeopleLookingFor'
 import { Footer } from './components/Footer'
 import { fetchProducts } from './services/api';
+import Sidebar from './components/Sidebar'
 
 
 function App() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   useEffect(() => {
     const loadProducts = async () => {
@@ -67,7 +69,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+      <Navbar setIsCartOpen={setIsCartOpen}/>
       <CategoryIcons />
       <HeroSection />
       <CategoriesSection />
@@ -81,6 +83,8 @@ function App() {
       <AppSection />
       <PeopleLookingFor />
       <Footer />
+
+      <Sidebar isOpen={isCartOpen} onClose={()=> setIsCartOpen(false)}/>
     </div>
   );
 

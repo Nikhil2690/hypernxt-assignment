@@ -1,9 +1,13 @@
 import React from 'react';
-import { ShoppingCart, User, Heart, Search, Menu, ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import {  User, Heart, Search, Menu, ChevronLeft, ChevronRight, ChevronDown, Star } from 'lucide-react';
 import Logo from '../assets/hypernxtlogo.png'
+import Sidebar from './Sidebar';
 
-export const Navbar = () => {
+export const Navbar = ({setIsCartOpen}) => {
+
+
   return (
+    <>
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-4">
         <div className="flex justify-between items-center h-16">
@@ -39,17 +43,21 @@ export const Navbar = () => {
             </button>
             <User className="w-6 h-6 text-gray-700 cursor-pointer" />
             <Heart className="w-6 h-6 text-gray-700 cursor-pointer" />
-            <div className="relative">
+            {/* <div className="relative">
               <ShoppingCart className="w-6 h-6 text-gray-700 cursor-pointer" />
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+            </div> */}
+            <div className="text-right cursor-pointer" onClick={()=> setIsCartOpen(true)}>
+              <div className="text-sm text-gray-500 flex gap-2 ml-5">Your Cart <ChevronDown/></div>
+              <div className="text-black text-lg font-semibold ml-5">$1290.00</div>
             </div>
-            <div className="text-right">
-              <div className="text-xs text-gray-500">Your Cart</div>
-              <div className="text-sm font-semibold">$1290.00</div>
-            </div>
+
           </div>
         </div>
       </div>
     </nav>
+
+
+    </>
   );
 };

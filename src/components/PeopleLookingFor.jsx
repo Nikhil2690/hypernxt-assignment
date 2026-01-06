@@ -2,7 +2,8 @@ export const PeopleLookingFor = () => {
   const searches = [
     'Blue diamon almonds', 'Angie\'s Boomchickapop Corn', 'Salty kettle Corn',
     'Chobani Greek Yogurt', 'Sweet Vanilla Yogurt', 'Foster Farms Takeout Crispy wings',
-    'Warrior Blend Organic', 'Chao Cheese Creamy', 'Chicken meatballs'
+    'Warrior Blend Organic', 'Chao Cheese Creamy', 'Chicken meatballs', 'Chicken Meatballs', 
+    'Angies Boomchickapop Corn', 'Salty Ketten Corn', 'Chobani Greek Yogurt', 'Sweet Vanilla Yogurt'
   ];
 
   return (

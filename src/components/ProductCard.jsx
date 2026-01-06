@@ -9,7 +9,7 @@ const ProductCard = ({ product, discount }) => {
         </span>
       )}
       <button className="absolute top-2 right-2 bg-gray-200 rounded-full p-2 hover:bg-gray-300">
-        <Heart className="text-black w-4 h-4" />
+        <Heart className="text-black w-5 h-5" />
       </button>
       <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
         {product.images && product.images[0] ? (
