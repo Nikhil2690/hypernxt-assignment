@@ -47,8 +47,8 @@ const total = cartItems.reduce((sum, item) => sum + item.price, 0);
       >
         {/* Header */}
         <div className="flex justify-between items-center p-4 border-b">
-          <h2 className="text-lg font-semibold">Your Cart</h2>
-          <button onClick={onClose} className="text-xl">✕</button>
+          <h2 className="text-2xl font-mono text-yellow-300">Your Cart</h2>
+          
         </div>
 
          {/* Close button */}
